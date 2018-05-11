@@ -1,0 +1,20 @@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <script src="vr.js"></script>
+    <title>VR Screen</title>
+</head>
+
+<body style="background-color:black;">
+    <video style="position:absolute;height:100%;width:45%;left:0%;top:0%;object-fit:contain;" id="remoteVideoL" autoplay></video>
+    <video style="position:absolute;height:100%;width:45%;left:55%;top:0%;object-fit:contain;" id="remoteVideoR" autoplay></video>
+
+    <button id="hide_me" onclick="document.body.webkitRequestFullScreen();document.getElementById('hide_me').style.display = 'none';" style="position:absolute;left:90%;top:0%;width:8%;height:10%;background-color:yellow;opacity:0.2;">[x]</button>
+
+    <script>
+        window.addEventListener("load", pageReady);
+    </script>
+</body>
+
+</html>
