@@ -117,7 +117,6 @@ function onAddStreamHandler(evt) {
 };
 
 // Generate orientation and move screen accordingly based on delta of movement
-var milliseconds = (new Date).getTime();
 sensorAbs = new AbsoluteOrientationSensor({
     frequency: 20
 });
